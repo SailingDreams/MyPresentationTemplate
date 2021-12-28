@@ -26,6 +26,8 @@ slide2_TheEarliestMammals.html
 slide3_TheLargestMammals.html
 and so on
 
+Keep all your file names lower case so that you don't have to deal with possible linking issues. 
+
 Handy git commands:
 1) First setup alias's
    - $ git config --global alias.co checkout
