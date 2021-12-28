@@ -42,3 +42,9 @@ Handy git commands:
    Always do a pull first before you push
    - $ git push
    This pushes your changes to git.
+3) When you get more familiar with git, using git stash is very handy to store changes momentarily
+   - $ git stash save put_a_name_here_to_describe_the_change
+   - $ git stash apply
+   - $ git stash list
+   - $ git stash drop the_index_of_the_one_you_wish_to_drop   
+     Eg. git stash drop stash@{0}
