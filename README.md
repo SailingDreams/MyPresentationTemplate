@@ -19,6 +19,18 @@ The repo has three slides but you can easily add more.
 Just copy slide3.html and rename it to slide4.html and change the "next slide" and
 "previous slide" texts.
 
+The slides (text) are in the slides folder. The images (or figures) are in the images
+folder. Relative folders is used throughout the code so that you can use
+a plugin like "live server" with Visual Studio Code to develop your presentation.
+The trick it that the folder path can change when using relative folders. For 
+example, in index.html, the path to slide1.html is slides/slide1.html. But if 
+the current page displayed is slide1.html, the path to slide2.html doesn't 
+need the "slides" folder. This is because slide2.html is in the same folder 
+as slide1.html.
+
+Another example is if you are in the slides folder and want an image from the images folder, you have to use the "../" syntax to go back one folder. i.e. 
+"../images/CatOnComputer.jpg" 
+
 I'd also recommend that you append a more meaningful name to the slide. For
 example:
 slide1_HistoryOfAnimalsIntro.html
@@ -37,7 +49,9 @@ Handy git commands:
 2) For adding (aka staging) files that have changed, I always use 
    - $ git add -u
      This is because there's likely a chance that there is a file I don't want added. The "-u" says to only add tracked files.
-   - $ git ci -m "here is where you add a comment for the change you are plan to push to githug pages.
+   - $ git add folder/filename
+     This is for adding new files
+   - $ git commit -m "here is where you add a comment for the change you are plan to push to githug pages.
    - $ git pull 
    Always do a pull first before you push
    - $ git push
